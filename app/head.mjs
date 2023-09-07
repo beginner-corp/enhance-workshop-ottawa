@@ -7,6 +7,9 @@ export default function Head(state) {
   const { req, store } = state
   const { path, session } = req
 
+  if (store.authorized === undefined) {
+    store.authorized = session.authorized || false
+  }
   if (store.path === undefined) {
     store.path = path
   }
