@@ -1,7 +1,25 @@
+import titlesByPath from './lib/titles-by-path.mjs'
 import { getStyles }  from '@enhance/arc-plugin-styles'
+
 const { linkTag } = getStyles
 
-export default function Head () {
+export default function Head(state) {
+  const { req, store } = state
+  const { path, session } = req
+
+  if (store.path === undefined) {
+    store.path = path
+  }
+  if (store.author === undefined) {
+    store.author = {
+      name: 'Axol Lotl',
+      title: 'Web Developer',
+      githubUsername: 'enhance-dev',
+    }
+  }
+
+  const title = titlesByPath[path] || ''
+
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -10,7 +28,7 @@ export default function Head () {
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="og:type" content="website" />
       <link rel="icon" href="/_public/favicon.svg">
-      <title>Axol Lotl: Web Developer</title>
+      <title>Axol Lotl: ${title}</title>
       <meta name="description" content="Portfolio for Axol Lotl, Senior Developer" />
       ${linkTag()}
 
