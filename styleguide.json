@@ -37,19 +37,19 @@
       "muted": "#6c757d",
       "white": "#fff"
     },
-    "properties": {
-      "site-width": "90vw",
-      "site-max-width": "1440px",
-      "linktree-avatar-img": "url('/_public/axol-wink.svg')",
-      "linktree-bg-img":"url('/_public/background.png')",
-      "linktree-link-border-radius": "999px",
-      "linktree-link-shadow": "4px 8px 11px #d3cef5",
-      "linktree-link-border-color": "transparent",
-      "linktree-link-border-color-hover": "#FFF",
-      "linktree-link-bg-color": "#FFF",
-      "linktree-link-bg-color-hover": "transparent",
-      "linktree-link-transform": "translate(0, 2px)"
-    },
+     "properties": {
+    "site-width": "90vw",
+    "site-max-width": "1440px",
+    "linktree-avatar-img": "url('/_public/axol-wink.svg')",
+    "linktree-bg-img":"",
+    "linktree-link-border-radius": "1px",
+    "linktree-link-shadow": "-1px 1px 0 #222,-2px 2px 0 #222,-3px 3px 0 #222,-4px 4px 0 #222,-5px 5px 0 #222,-6px 6px 0 #222,-7px 7px 0 #222,-8px 8px 0 #222",
+    "linktree-link-border-color": "#222",
+    "linktree-link-border-color-hover": "red",
+    "linktree-link-bg-color": "#FFF",
+    "linktree-link-bg-color-hover": "#FFF",
+    "linktree-link-transform": "translate(-8px, 8px)"
+  },
     "grid": {
       "steps": 6
     },
