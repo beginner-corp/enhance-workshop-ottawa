@@ -6,7 +6,7 @@ export default function LinkItemElement({ html, state }) {
         <div class="mb0">
             <p class="pb-2"><strong class="capitalize">text: </strong><span>${text}</span></p>
             <p class="pb-2"><strong class="capitalize">url: </strong><span>${url}</span></p>
-            <p class="pb-2"><strong class="capitalize">published: </strong>${published}</p>
+            <p class="pb-2"><strong class="capitalize">published: </strong><span>${published}</span></p>
             <p class="pb-2"><strong class="capitalize">key: </strong><span>${key}</span></p>
         </div>
         <p class="mb-1">
