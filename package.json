@@ -8,7 +8,9 @@
   "dependencies": {
     "@begin/validator": "^1.0.1",
     "@enhance/arc-plugin-enhance": "^6.2.2",
+    "@enhance/custom-element": "^1.0.1",
     "@enhance/form-elements": "^1.0.3",
+    "@enhance/morphdom-mixin": "^1.0.0",
     "@enhance/styles-cribsheet": "^0.0.9"
   },
   "devDependencies": {
