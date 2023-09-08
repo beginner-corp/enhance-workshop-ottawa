@@ -4,7 +4,7 @@ import MorphdomMixin from '@enhance/morphdom-mixin'
 import LinkItemElement from '../elements/link-item.mjs'
 
 export default class LinkItem extends MorphdomMixin(CustomElement) {
-  static observedAttributes = ['key', 'text', 'url'];
+  static observedAttributes = ['key', 'text', 'url', 'published'];
 
   render(args) {
     return LinkItemElement(args)
