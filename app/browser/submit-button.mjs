@@ -25,7 +25,7 @@ export default class SubmitButton extends HTMLElement {
         body: JSON.stringify(Object.fromEntries(new FormData(form)))
       })
       let { link } = await response.json()
-      let { key, text, url } = link
+      let { key, text, url, published } = link
       let details = document.querySelector('details')
       details.removeAttribute('open')
       form.reset()
@@ -35,6 +35,7 @@ export default class SubmitButton extends HTMLElement {
       newNode.setAttribute('key', key)
       newNode.setAttribute('text', text)
       newNode.setAttribute('url', url)
+      newNode.setAttribute('published', published)
       detailsParent.insertBefore(newNode, details)
     } catch(error) {
       console.error("Whoops!", error)
