@@ -13,6 +13,7 @@ export default function links({ html, state }) {
 <div class="mb0">
   <p class="pb-2"><strong class="capitalize">text: </strong>${item?.text || ''}</p>
   <p class="pb-2"><strong class="capitalize">url: </strong>${item?.url || ''}</p>
+  <p class="pb-2"><strong class="capitalize">published: </strong>${link?.published || ''}</p>
   <p class="pb-2"><strong class="capitalize">key: </strong>${item?.key || ''}</p>
 </div>
 <p class="mb-1">
